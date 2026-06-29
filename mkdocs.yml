@@ -2,11 +2,10 @@ site_name: Vanta Docs
 site_description: Documentation for Vanta FiveM scripts
 site_author: Vanta
 # Change this to your real domain once you have one (e.g. https://docs.vanta.dev)
-site_url: https://vanta-scripts.github.io/vanta-docs/
+site_url: https://vantascripts-coder.github.io/vanta-docs/
 
-# Uncomment and adjust once your GitHub repo exists - enables the edit/repo links.
-# repo_name: Vanta-Scripts/vanta_admin
-# repo_url: https://github.com/Vanta-Scripts/vanta_admin
+repo_name: vantascripts-coder/vanta-docs
+repo_url: https://github.com/vantascripts-coder/vanta-docs
 
 theme:
   name: material
@@ -99,4 +98,4 @@ extra:
       link: https://discord.gg/your-invite
       name: Vanta Discord
     - icon: fontawesome/brands/github
-      link: https://github.com/Vanta-Scripts
+      link: https://github.com/vantascripts-coder
