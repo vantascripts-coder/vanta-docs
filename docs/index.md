@@ -9,6 +9,11 @@ hide:
 High-quality, **standalone-friendly** scripts for FiveM — built for performance,
 security and clean UI. Browse the documentation for each product below.
 
+!!! warning "Coming soon"
+    **Vanta Admin** is launching soon and is **not publicly available yet**. This
+    site is an early documentation preview. Join the [Discord](https://discord.gg/your-invite)
+    to be notified the moment it releases.
+
 ## Scripts
 
 <div class="grid cards" markdown>

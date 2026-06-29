@@ -4,6 +4,11 @@ An in-game **admin & management tool** for FiveM: player management, server
 announcements and a **secure database editor** — all through a clean NUI
 interface, with **no framework dependency** (works standalone, ESX, QBCore, …).
 
+!!! warning "Not released yet"
+    Vanta Admin is **launching soon**. The docs below are a preview so you can see
+    exactly what to expect — the script isn't downloadable yet. Join the
+    [Discord](https://discord.gg/your-invite) for the release announcement.
+
 <div class="grid cards" markdown>
 
 - :material-rocket-launch: **[Get started](getting-started/installation.md)**
