@@ -1,0 +1,102 @@
+site_name: Vanta Docs
+site_description: Documentation for Vanta FiveM scripts
+site_author: Vanta
+# Change this to your real domain once you have one (e.g. https://docs.vanta.dev)
+site_url: https://vanta-scripts.github.io/vanta-docs/
+
+# Uncomment and adjust once your GitHub repo exists - enables the edit/repo links.
+# repo_name: Vanta-Scripts/vanta_admin
+# repo_url: https://github.com/Vanta-Scripts/vanta_admin
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+    # Dark mode (default - fits the "Vanta" / vantablack brand)
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    # Light mode
+    - scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Vanta Admin:
+      - Overview: scripts/vanta-admin/index.md
+      - Getting Started:
+          - Installation: scripts/vanta-admin/getting-started/installation.md
+          - Permissions (ACE): scripts/vanta-admin/getting-started/permissions.md
+          - server.cfg Setup: scripts/vanta-admin/getting-started/server-cfg.md
+      - Configuration:
+          - General: scripts/vanta-admin/configuration/general.md
+          - Database Editor: scripts/vanta-admin/configuration/database.md
+          - Framework Presets: scripts/vanta-admin/configuration/presets.md
+      - Localization: scripts/vanta-admin/localization.md
+      - Features: scripts/vanta-admin/features.md
+      - Security Model: scripts/vanta-admin/security.md
+      - FAQ & Troubleshooting: scripts/vanta-admin/faq.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/your-invite
+      name: Vanta Discord
+    - icon: fontawesome/brands/github
+      link: https://github.com/Vanta-Scripts
