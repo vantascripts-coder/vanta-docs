@@ -46,15 +46,14 @@ Copy the `['en']` block in `locales.lua`, rename the key, translate the strings
 (keep `%s`/`%d`/`{n}`/`{total}`), then set `Config.Language` to your new code. See
 [Localization](localization.md).
 
-## Can I sell this / protect the code?
+## Does it affect server performance?
 
-Yes. Client/NUI files are always extractable from the player cache, so never put
-secrets there. To protect your IP when selling, use the **Cfx.re Asset Escrow**
-system — the resource ships with an `escrow_ignore` block that keeps `config.lua`
-and `locales.lua` open for buyers while encrypting the rest.
+No noticeable impact. The script is idle until you open the panel — it only does
+work on demand (player list, an action, or a database query) and uses lightweight
+native notifications, not a constant loop.
 
 ## Still stuck?
 
 Open the server console and look for lines starting with `[vanta_admin]` — they
-tell you the database state and any skipped tables. If you're distributing the
-script, point users to your Discord for support.
+tell you the database state and any skipped tables. For further help, join the
+Vanta Discord.

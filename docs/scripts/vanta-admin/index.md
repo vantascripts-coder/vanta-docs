@@ -38,9 +38,10 @@ interface, with **no framework dependency** (works standalone, ESX, QBCore, …)
     Every action is checked server-side via **ACE permissions**. The UI only hides
     buttons cosmetically — even a tampered client cannot bypass a permission.
 
-!!! note "Escrow-ready"
-    Ships with an `escrow_ignore` block so it can be sold via Cfx.re/Tebex while
-    keeping `config.lua` and `locales.lua` open for buyers.
+!!! note "Fully configurable"
+    `config.lua` and `locales.lua` are open and documented — set the open key,
+    language, permissions and which database tables are editable, all without
+    touching the core code.
 
 ---
 

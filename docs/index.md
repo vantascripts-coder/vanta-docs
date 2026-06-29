@@ -18,7 +18,7 @@ security and clean UI. Browse the documentation for each product below.
     ---
 
     In-game admin & management tool: player actions, announcements and a secure,
-    whitelisted **database editor**. Standalone, multi-language, escrow-ready.
+    whitelisted **database editor**. Standalone, multi-language, plug-and-play.
 
     [:octicons-arrow-right-24: Open docs](scripts/vanta-admin/index.md)
 
