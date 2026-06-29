@@ -29,9 +29,11 @@ mkdocs build          # outputs to ./site
 
 ### Option A — GitHub Pages (automatic, recommended)
 1. Push this folder to a GitHub repo (e.g. `Vanta-Scripts/vanta-docs`).
-2. The included workflow `.github/workflows/deploy.yml` builds and publishes on
-   every push to `main`.
-3. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+2. The included workflow `.github/workflows/deploy.yml` runs `mkdocs gh-deploy`
+   on every push to `main`, building the site into a `gh-pages` branch.
+3. After the first workflow run finishes, go to
+   **Settings → Pages → Build and deployment → Source: Deploy from a branch**,
+   then pick **Branch: `gh-pages` / `(root)`** and save.
 4. Your docs go live at `https://<user>.github.io/<repo>/`.
 
 ### Option B — Cloudflare Pages (custom domain like docs.vanta.dev)
