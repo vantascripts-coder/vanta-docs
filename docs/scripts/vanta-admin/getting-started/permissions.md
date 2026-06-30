@@ -19,6 +19,9 @@ checked **server-side** for every action — the UI only hides buttons cosmetica
 | `vanta_admin.announce` | Send announcements |
 | `vanta_admin.dbview` | View database tables |
 | `vanta_admin.dbedit` | Edit database records |
+| `vanta_admin.spectate` | Spectate a player's in-game view (needs OneSync) |
+| `vanta_admin.noclip` | Free-camera noclip movement |
+| `vanta_admin.livemap` | Live player map in the panel (needs OneSync) |
 
 ## Grant full admin
 
@@ -34,6 +37,9 @@ add_ace group.admin vanta_admin.freeze   allow
 add_ace group.admin vanta_admin.announce allow
 add_ace group.admin vanta_admin.dbview   allow
 add_ace group.admin vanta_admin.dbedit   allow
+add_ace group.admin vanta_admin.spectate allow
+add_ace group.admin vanta_admin.noclip   allow
+add_ace group.admin vanta_admin.livemap  allow
 
 # Add yourself to the admin group (use YOUR identifier!)
 add_principal identifier.fivem:YOUR_ID  group.admin

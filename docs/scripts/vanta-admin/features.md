@@ -15,11 +15,19 @@ actions:
 | **Goto** | `teleport` | Teleport yourself to the player |
 | **Bring** | `teleport` | Teleport the player to you |
 | **Freeze** | `freeze` | Toggle freezing the player in place |
+| **Spectate** | `spectate` | View the player's in-game perspective (needs OneSync) |
 | **Kick** | `kick` | Disconnect with a reason |
 | **Ban** | `ban` | Ban with a reason and optional duration (0 = permanent) |
 
+A **Noclip** toggle (`noclip`) is also available in the Players tab toolbar.
+
 !!! info "Teleport uses synced server coords"
     Goto/Bring read the target's server-synced position — no client trust needed.
+
+## Map
+
+A live player map (`livemap`, needs OneSync) showing everyone as dots. See
+**[Monitoring](monitoring.md)** for spectate, noclip and the live map in detail.
 
 ## Server
 

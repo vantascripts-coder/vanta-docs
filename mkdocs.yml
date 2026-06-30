@@ -59,6 +59,7 @@ nav:
           - Framework Presets: scripts/vanta-admin/configuration/presets.md
       - Localization: scripts/vanta-admin/localization.md
       - Features: scripts/vanta-admin/features.md
+      - Monitoring: scripts/vanta-admin/monitoring.md
       - Security Model: scripts/vanta-admin/security.md
       - FAQ & Troubleshooting: scripts/vanta-admin/faq.md
 
