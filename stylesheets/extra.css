@@ -1,0 +1,39 @@
+/* ===========================================================================
+   Vanta brand tweaks for MkDocs Material
+   =========================================================================== */
+
+:root {
+  --md-accent-fg-color: #4f7cff;
+}
+
+/* Dark scheme: deep "vantablack" surfaces + indigo accent */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #14161c;
+  --md-default-bg-color: #0f1116;
+  --md-accent-fg-color: #6f8cff;
+}
+
+/* Header logo sizing */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+/* Cards: subtle hover lift */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > :is(ul, ol) > li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 12px;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-2px);
+}
+
+/* Make the home hero title a touch bigger */
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
