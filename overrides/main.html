@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+<!-- Keep the pre-launch preview out of search engines (Google etc.).
+     Remove this block when you want the site to be indexable. -->
+{% block extrahead %}
+  <meta name="robots" content="noindex, nofollow">
+{% endblock %}
+
 <!-- Site-wide announcement bar shown at the very top of every page -->
 {% block announce %}
   🚧 <strong>Vanta Admin is launching soon</strong> &mdash; this is a documentation
